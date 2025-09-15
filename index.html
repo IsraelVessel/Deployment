@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solomon Israel Maichibi - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">Israel Vessel</a>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About Me</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <h1>Welcome to My Website</h1>
+    <div class="slider" aria-label="Image Slider">
+      <div class="slides">
+        <img src="https://avatars.githubusercontent.com/u/219816283?s=400&u=e0ade4af9c35deddfacbd3b08941576d1ea29658&v=4" alt="Slide one" class="slide active" style="width:150px; height:150px;;" />
+        <img src="https://avatars.githubusercontent.com/u/219816283?s=400&u=e0ade4af9c35deddfacbd3b08941576d1ea29658&v=4" alt="Slide 3" class="slide active" style="width:500px; height:400px;" />
+         <img src="https://avatars.githubusercontent.com/u/219816283?s=400&u=e0ade4af9c35deddfacbd3b08941576d1ea29658&v=4" alt="Slide 3" class="slide active" style="width:500px; height:400px;" />
+      </div>
+    </div>
+      <button class="prev" aria-label="Previous Slide">&#10094;</button>
+      <button class="next" aria-label="Next Slide">&#10095;</button>
+    </div>
+    <p>Hello! I'm <strong>Solomon Israel Maichibi</strong>, a Graduate of English Language from Federal University Dutse. I love to code and build things with technology.</p>
+  </section>
+
+  <section id="about">
+    <h1>About Me</h1>
+    <div class="about-text">
+      <p>I graduated from Federal University Dutse with a degree in English Language.</p>
+      <p>My passion for coding and web development has grown immensely, combining creativity with logical problem solving.</p>
+    <p>On GitHub, you can find my projects under the username Israel Vessel <button type="button" onclick="window.open('https://github.com/IsraelVessel', '_blank')">Click Me</button>
+    
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+      <div id="formMessage" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Solomon Israel Maichibi. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
